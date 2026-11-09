@@ -1,0 +1,70 @@
+/* Matches Home & Profile visual theme */
+
+.movies-page {
+  min-height: 100vh;
+  background: #020617;
+  color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Centered layout */
+.movies-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+
+/* Header */
+.movies-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.movies-header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.movies-header p {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+/* Grid layout */
+.movies-grid {
+  display: grid;
+  justify-content: center;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  padding-bottom: 40px;
+}
+
+/* Skeleton card */
+.movie-skeleton {
+  aspect-ratio: 2 / 3;
+  border-radius: 24px;
+  background: linear-gradient(
+    90deg,
+    #111827 0%,
+    #1f2937 50%,
+    #111827 100%
+  );
+  background-size: 200% 100%;
+  animation: movie-skeleton 1.2s infinite ease-in-out;
+  border: 1px solid #1f2937;
+}
+
+@keyframes movie-skeleton {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Empty message */
+.movies-empty {
+  margin-top: 60px;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 1rem;
+}

@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom additions */
+:root{
+  --accent: #6366f1; /* indigo-500 */
+  --muted: #9CA3AF; /* gray-400 */
+}
+
+body { 
+  background: linear-gradient(180deg, #0f172a 0%, #020617 100%);
+  color: #e6eef8;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Card hover lift */
+.card-hover { transition: transform .25s ease, box-shadow .25s ease; }
+.card-hover:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(2,6,23,0.6); }
+
+/* Subtle fade-in */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp .45s ease both; }
+
+/* Poster overlay */
+.poster-overlay { background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.6) 100%); }
+
+/* Featured strip scroll snapping */
+.featured-scroll { scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+.featured-item { scroll-snap-align: start; }

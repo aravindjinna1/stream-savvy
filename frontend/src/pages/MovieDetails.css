@@ -1,0 +1,89 @@
+.details-page {
+  background: #020617;
+  color: white;
+  min-height: 100vh;
+}
+
+.details-container {
+  max-width: 960px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.details-card {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.details-image-wrap {
+  position: relative;
+}
+
+.details-image {
+  width: 250px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #1f2937;
+}
+
+.details-like-btn {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.heart-filled {
+  color: #ff3b7b;
+  font-size: 28px;
+}
+
+.heart-outline {
+  color: #d9d9d9;
+  font-size: 28px;
+}
+
+.details-info {
+  flex: 1;
+}
+
+.details-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.details-year {
+  opacity: 0.7;
+}
+
+.details-meta {
+  margin-top: 8px;
+  opacity: 0.8;
+}
+
+.details-dot::before {
+  content: " • ";
+}
+
+.details-plot {
+  margin-top: 16px;
+  line-height: 1.5;
+}
+
+.details-extras {
+  margin-top: 20px;
+  opacity: 0.9;
+}
+
+.details-back-btn {
+  margin-top: 24px;
+  background: #1e293b;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
